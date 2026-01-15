@@ -64,7 +64,7 @@ def preguntar(msg):
 
     return rsp.choices[0].message.content
 
-
+'''
 @app.route('/chat', methods=['GET'])
 def chat_test():
     """Ruta para probar el chatbot desde el navegador"""
@@ -93,7 +93,7 @@ def api_chat():
         'clasificacion': clasificacion,
         'respuesta': respuesta
     })
-
+'''
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=False)
